@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+#navbar
+{
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 3rem;
+    z-index: 100;
+    font-style: italic;
+    box-shadow: 2px;
+    font-weight: 700;
+    background-color: white;
+}
+#navbarSupportedContent a:hover
+{
+    border-top: 2px solid green;
+    
+}
+#middle a:hover{
+    color: rgb(255, 0, 0);
+    
+}
+.heading{
+    height: 100px;
+    background-color:wheat;
+}
+.set{
+    text-align: center;
+margin-top: -20px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    
+}
+.contents{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+.mycontent{
+    font-size:20px;
+    margin-left: 20px;
+    
+}
+.offers{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.tips{
+    margin-top: 5px;
+    margin-left: 50px;
+}

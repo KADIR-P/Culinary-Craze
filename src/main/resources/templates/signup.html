@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor’s Recipe</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="sign.css">
+    <link rel="icon" type="image/x-icon" href="row.png">
+</head>
+<body>
+
+    <form action="/save" method="get">
+    <div class="container">
+    <fieldset id="nowapply">
+       <legend>SignUp</legend>
+       <form action="/regsuccess" method="get">
+        <br>
+        <div class="mail">
+            <table class="mytable" >
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text"  id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" name="email" id="mailid" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" id="confirmpassword"  required></td>
+                    
+                </tr>
+
+                
+                <tr>
+                    <td></td>
+                <td><input type="checkbox" onclick="myFunction()">Show Password
+                    
+                    
+                    <script>
+                        function myFunction() {
+                        var x = document.getElementById("confirmpassword");
+                        if (x.type === "password") {
+                        x.type = "text";
+                        } else {
+                        x.type = "password";
+                        }
+                        }
+                    </script>
+                </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    
+                    <td><input type="submit" name="Signup" id="register" value="Register Now"></td>
+                    </form>
+                </tr>
+           
+            </table>
+            <span class="loginpage">Already have account?<a href="/login1">Login</a></span>
+        </div>
+            
+
+    </fieldset>
+</div>
+</form>
+</body>
+</html>

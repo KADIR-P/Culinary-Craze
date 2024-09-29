@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* Resetting some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#navbar
+{
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 3rem;
+    z-index: 100;
+    font-style: italic;
+    box-shadow: 2px;
+    font-weight: 700;
+    background-color: white;
+}
+#navbarSupportedContent a:hover
+{
+    border-top: 2px solid green;
+    
+}
+#middle a:hover{
+    color: rgb(255, 0, 0);
+    
+}
+
+/* About page header styling */
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+}
+
+/* About content styling */
+.about-content {
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.about-content h2 {
+    font-size: 1.75rem;
+    color: #343a40;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+.about-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+}
+.heading{
+    height: 150px;
+    background-color:wheat;
+}
+
+
+#set{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+}
+
+#about{
+background-color:black;
+color: whitesmoke;
+}
+#about-content{
+    color: whitesmoke;
+    font-size: 20px;
+    height: 400px;
+}

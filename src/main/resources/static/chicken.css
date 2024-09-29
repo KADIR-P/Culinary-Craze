@@ -1,0 +1,51 @@
+*{
+    max-width: 100%;
+}
+#navbar
+{
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 3rem;
+    z-index: 100;
+    font-style: italic;
+    box-shadow: 2px;
+    font-weight: 700;
+    background-color: white;
+}
+#navbarSupportedContent a:hover
+{
+    color: blue;
+    border-top: 2px solid green;
+}
+
+.heading{
+    height: 150px;
+    background-color:wheat;
+}
+.set{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+}
+
+.ingredients{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.steps{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.steps img{
+    width: 600px;
+    border-radius: 25px;
+    margin-top: 20px;
+    height: 250px;
+    margin-left: 200px;
+}
+
+
+

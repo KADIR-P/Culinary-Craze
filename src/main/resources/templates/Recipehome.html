@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bachelor's Recipe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .search-container {
+            position: relative;
+        }
+        .search-input {
+            width: 0;
+            opacity: 0;
+            transition: width 0.4s ease, opacity 0.4s ease;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 0;
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            background: #fff;
+        }
+        .search-button {
+            border-radius: 0;
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+            color:red;
+        }
+        .search-button:hover {
+            background-color: #e2e6ea;
+        }
+        .search-container.open .search-input {
+            width: 200px; /* Adjust width as needed */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function toggleSearch() {
+            const searchContainer = document.querySelector('.search-container');
+            searchContainer.classList.toggle('open');
+            if (searchContainer.classList.contains('open')) {
+                document.querySelector('.search-input').focus();
+            }
+        }
+    </script>
+    
+    <nav class="navbar navbar-expand-lg" id="navbar" style="background-color: black;">
+        <div class="container-fluid">
+            <img src="header.png" style="width: 50px;margin-top: -3px;">
+            <p class="navbar-brand" style="margin-top: 6px; color: whitesmoke;font-size:30px ">
+               Culinary Craze
+            </p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/home" style="color: red;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/recipe" style="color: red;">RECIPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" style="color: red;">ABOUT US</a>
+                    </li>
+                </ul>
+                <div class="search-container ms-3">
+                    <button class="search-button" onclick="toggleSearch()">Search</button>
+                    <input type="text" class="search-input form-control" placeholder="Search recipes...">
+                </div>
+            </div>
+            <a href="/login1"><button class="btn btn-danger ms-2">Logout</button></a>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <br>
+        <br>
+        <h5 class="set">Vanakkam da Bachelors &#128526;</h5>
+        
+    </div>
+    <section class="contents">
+    <div class="mycontent">
+        <center><p><b>Welcome to our Recipe Book!</b>
+            Cooking Simplified for Beginners<br></center>
+            
+            Welcome to a space dedicated to making cooking easy and enjoyable! Whether you’re a novice in the kitchen or 
+            just looking for straightforward recipes, our Bachelor’s Recipe Book is here to help you get started with confidence.</p><br>
+
+            <strong style="color:chartreuse;">What we Offer here:</strong>
+            <br>
+            
+            <ul class="offers">
+                <li><b style="color: brown;">Simple and Tasty Recipes:</b> Explore a variety of recipes that are easy to prepare and delicious. 
+                    Perfect for those new to cooking or looking to expand their repertoire.</li>
+
+                <li><b style="color: brown;">Clear Instructions:</b> Each recipe comes with step-by-step instructions to guide you through the cooking process effortlessly.</li>
+
+                <li><b style="color: brown;">Cooking Tips and Techniques:</b> Gain valuable insights on basic cooking techniques, ingredient handling, and kitchen hacks to enhance your culinary skills.</li>
+            <li><b style="color: brown;">Nutritional Information:</b> Get an overview of the nutritional value of the dishes to make informed choices about your meals.</li>
+            </ul>
+            <strong style="color:chartreuse;">Cooking Tips:</strong>
+            <br>
+            <ul class="tips">
+                <li><b style="color: brown;">Start Small:</b> Choose recipes with fewer ingredients and straightforward steps to build your confidence.</li>
+                <li><b style="color: brown;">Prepare Ahead:</b> Gather all your ingredients and tools before you begin cooking to streamline the process.</li>
+                <li><b style="color: brown;">Experiment with Flavors:</b> Don’t be afraid to add your own twist to recipes. Experimenting with spices and herbs can make cooking more fun.</li>
+                <li><b style="color: brown;">Practice Regularly:</b> The more you cook, the better you’ll become. Keep practicing and experimenting to improve your skills.</li>
+            </ul>
+    </div>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Our Cooking. All Rights Reserved.</p>
+        <p><a class="text-white">Privacy Policy</a> | <a class="text-white">Terms & Conditions</a></p>
+    </div>
+</footer>
+</section>
+
+</body>
+</html>

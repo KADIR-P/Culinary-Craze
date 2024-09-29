@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Error</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle, #f7f7f7, #d1d1d1);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .error-container {
+            position: relative;
+            text-align: center;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .error-container::before, .error-container::after {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: linear-gradient(45deg, #ff6f61, #d1a1f2, #ffcc5c);
+            z-index: -1;
+            animation: rotate 10s linear infinite;
+        }
+        .error-container::after {
+            filter: blur(60px);
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .error-title {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #ff6f61;
+            margin: 0;
+            padding: 0;
+            animation: bounce 1s infinite alternate;
+        }
+        .error-message {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #555;
+        }
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #fff;
+            background: linear-gradient(45deg, #ff6f61, #d1a1f2);
+            padding: 12px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .back-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #d1a1f2, #ff6f61);
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-title">Oops!</h1>
+        <p class="error-message">Incorrect username or password. Please try again.</p>
+        <a href="/login1" class="back-button">Retry Login</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+#navbar
+{
+    position: sticky;
+    top: 0;
+    padding: 0.5rem 3rem;
+    z-index: 100;
+    font-style: italic;
+    box-shadow: 2px;
+    font-weight: 700;
+    background-color: white;
+}
+#navbarSupportedContent a:hover
+{
+    border-top: 2px solid green;
+    
+}
+#middle a:hover{
+    color: rgb(255, 0, 0);
+    
+}
+.heading{
+    height: 150px;
+    background-color:wheat;
+}
+
+#set{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+}
+
+#id{
+    
+    text-align: center;
+    max-width:100%;
+}
+#id a{
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 600;
+}
+#id img{
+    width: 400px;
+    border-radius: 25px;
+    margin-top: 20px;
+    height: 300px;
+}
+#col{
+    color:blue;
+}
